@@ -1,0 +1,12 @@
+#SITE SETTINGS
+baseurl: /bizkitpark
+exclude: ['README.md'
+
+# LANGUAGES
+l:
+  en: English
+  nl: Nederlands
+
+langs:
+  - "en"
+  - "nl"
