@@ -1,0 +1,131 @@
+---
+layout: default
+title: Bizkit Park
+---
+
+<section class="cover">
+<img src="{{site.baseurl}}img/cover.jpg" class="img-fluid" />
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <p>Every classic track that helped shape this mind-blowing era receives the royal treatment in a swirling and seamless set. Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed, … 
+None are left out of the party.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content photo my-5 py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="bricklayer chocolat-parent">
+          {% for image in site.static_files %}
+          {% if image.path contains 'assets/thumbs' %}
+          <div>
+            <a class="chocolat-image" href="{{site.baseurl}}/assets/pictures/{{image.name}}" title="Bizkit Park">
+              <img src="{{site.baseurl}}{{image.path}}" class="img-fluid" />
+            </a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12 py-4 text-center">
+        <p><a href="{{site.facebook}}" class="btn btn-primary btn-bizkitpark" rel="external">view more on <b>Facebook</b></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content video my-10 py-10">
+  <div class="container">
+    <div class="row">
+      {% for youtube in site.data.youtube %}
+      <div class="col-sm-12 col-md-6">        
+        <div class="embed-responsive embed-responsive-16by9">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
+        </div>
+        <p class="text-center caption py-3">{{youtube.name}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-12 text-center my-4">
+        <a href="{{site.youtube}}" role="button" class="btn btn-primary btn-bizkitpark" rel="external">View more on <b>Youtube</b></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shows my-10 py-10">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2>Shows</h2>
+        
+        <!-- Bandsintown -->
+        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="bizkit park" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#FB1038" data-popup-background-color="#000000" data-background-color="#000000" data-display-limit="" data-link-text-color="#FFFFFF"></a>
+        <!-- // Bandsintown -->
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center my-4">
+        <a href="{{site.bandsintown}}" role="button" class="btn btn-primary btn-bizkitpark" rel="external">Follow on <b>Bands In Town</b></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="follow my-10 py-10">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h2>Follow Us</h2>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <a href="{{site.facebook}}" title="facebook" rel="external"><i class="fab fa-facebook-square"></i> Facebook</a>
+      </div>
+      <div class="col">
+        <a href="{{site.youtube}}" title="youtube" rel="external"><i class="fab fa-youtube"></i> Youtube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="who my-10 py-10">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h2>Who we are</h2>
+        <p>BIZKIT PARK pays tribute to one of the most illustrious sub genres ever to arise in modern alternative music: NU-METAL</p>
+        <p>Every classic track that helped shape this mind-blowing era receives the royal treatment in a swirling and seamless set. Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed, … None are left out of the party.</p>
+        <p>Despite being underestimated and often bashed by critics, Nu-Metal managed to provide the soundtrack for an entire generation. In addition, it turned out to be the last stronghold of heavy guitars in mainstream music. Gut punching riffs, aggressive drums and lots of attitude broadcasted by radio and TV on a daily basis… It’s a distant memory and hard to imagine these days.</p>
+        <p>Therefore one might conclude that it’s about time Nu-Metal received a proper salute. Henceforth Bizkit Park will take this task to heart with staggering enthusiasm and destroy every available stage in the process.</p>
+        <p class="small my-5">Niko Van Driessche<br />Bart Vriesacker<br />Jan De Sorte<br />Frederik Verhoeven<br />Servaas Steurbaut</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact my-10 py-10">
+  <img src="{{site.baseurl}}img/logo-bottom.png" alt="bizkit park" class="logo" />
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h3>Promo</h3>
+        <p>Bizkit Park<br /><a href="{{site.promo}}" title="promo" class="external">{{site.promo}}</a></p>
+      </div>
+      <div class="col">
+        <h3>Bookings</h3>
+        <p>Bizkit Park<br />L&amp;S Agency<br /><a href="{{site.bookings}}" title="promo" class="external">{{site.bookings}}</a><br />+32 11 67 17 01</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<footer class="footer text-center py-5">
+  <div class="container">
+    <div class="row social py-5">
+      <div class="col">
+        <a href="{{site.facebook}}" title="facebook" rel="external"><i class="fab fa-facebook-square"></i></a> <a href="{{site.youtube}}" title="youtube" rel="external"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav justify-content-center my-3">
+        {% for menu in site.navi %}
+          <li class="nav-item text-center">
+            <a href="{{site.baseurl}}{{menu.url}}" class="nav-link {{active}} {{menu.class}}" rel="{{menu.rel}}">{{ menu.name }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-12">
+        <p>
+          <small>
+            &copy; Bizkit Park - 2018 - <a href="{{site.photography}}" rel="external">Sempiternal Photography</a>
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

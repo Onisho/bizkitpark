@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-dark navbar-cz fixed-top">
+  <a class="navbar-brand d-inline-block d-md-none" href="{{site.baseurl}}/{{page.lang}}">BIZKIT PARK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      {% for menu in site.navi %}
+      <li class="text-center">
+        <a href="{{site.baseurl}}{{menu.url}}" class="nav-link {{active}} {{menu.class}}" rel="{{menu.rel}}">{{ menu.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

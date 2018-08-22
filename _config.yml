@@ -1,12 +1,39 @@
 #SITE SETTINGS
-baseurl: /bizkitpark
-exclude: ['README.md'
+baseurl: 
+exclude: ['README.md']
+include: ['_pages']
+permalink: /:title/
+title: Bizkit Park
+description: Earth’s mightiest Nu-Metal tribute band. We celebrate the entire era and party like it’s 1999!
+keywords: bizkit park
 
-# LANGUAGES
-l:
-  en: English
-  nl: Nederlands
+#SOCIAL
+facebook: https://www.facebook.com/bizkitparkofficial
+youtube: https://www.youtube.com/channel/UC8EhvXmDBgFLTg2PymsePnw
+bandsintown: https://www.bandsintown.com/en/a/9582945-bizkit-park
+photography: https://www.facebook.com/Sempiternalphotograph/
+bookings: waldo@lsagency.be
+promo: info@bizkitpark.be
 
-langs:
-  - "en"
-  - "nl"
+#lANG NAVIGATION
+navi:
+- name: Home
+  url: #
+  class: 
+  rel: 
+- name: Media
+  url: #media
+  class: 
+  rel: 
+- name: Shows
+  url: #shows
+  class: home
+  rel: 
+- name: Bio
+  url: #bio
+  class: 
+  rel: 
+- name: Contact
+  url: #contact
+  class: 
+  rel: 
