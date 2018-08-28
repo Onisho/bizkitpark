@@ -6,14 +6,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 
 /* general */
-html, body {height:100%;}
 body {background-color:#000;color:#FFF;}
 
 /* text */
 a {color:#FB1038;cursor:pointer;}
 a:hover {text-decoration:none;color:#fff;}
-h2 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;margin-bottom:4rem;}
+h1 {text-shadow: 3px 3px #000000;}
+h2 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;margin-bottom:1rem;text-shadow: 2px 2px #000000;}
 h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;}
+h4 {color:#D8D1C5;text-shadow: 1px 1px #000000;}
+
+/* navigation */
+.navbar-dark .navbar-nav .nav-link {text-transform: uppercase;color:#FFFFFF;text-shadow: 1px 1px #000000;}
+.navbar-dark .navbar-nav .nav-link:hover {color:#FB1038;}
+.navbar-bizkitpark {background-color:#FB1038;}
+.navbar-bizkitpark.is-sticky {background-color:#000000;}
 
 /* buttons */
 .btn-bizkitpark, 
@@ -42,16 +49,25 @@ h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-tran
     box-shadow: none;
 }
 
+/* cover */
+.cover {background: transparent url('../img/cover.jpg') center bottom no-repeat;background-size:cover;}
+
 /* video */
 .video {background: transparent url('../img/video.jpg') 50% 50% no-repeat;background-size:cover;}
 .video .caption {text-transform: uppercase; font-size:.9em;}
 
 /* follow */
-.follow {background: transparent url('../img/follow.jpg') 50% top no-repeat;background-size:cover;}
+.follow {position:relative;}
+.follow-content {position:absolute;top:30%;left:0;right:0;text-shadow: 1px 1px #000000;}
 .follow a {font-size:2.4rem;color:#fff;}
 
 /* who */
 .who {background: transparent url('../img/who.jpg') 50% bottom no-repeat;background-size:contain;min-height:1400px;}
+.who-image {position:absolute;bottom:-13vh;left:5%;right:5%;text-align:center;}
+
+/* contact */
+.contact {position: relative;}
+.contact .logo-bottom {position:absolute;bottom:-160px;left:calc(50vw - 163px);}
 
 /* spacing */
 .py-10 {padding-bottom:5rem !important;padding-top:5rem !important;}
@@ -76,3 +92,11 @@ h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-tran
 }
 .footer .nav a {color:#000;text-transform:uppercase;font-size:.85rem;}
 .footer .social a {color:#000;font-size:3rem;margin:0 .5rem;}
+
+/* mobile */
+@media screen and (min-width: 768px){ 
+  h2 {margin-bottom:4rem;}
+  .follow-content {top:40%;}
+  .who-image {bottom:-15vh;}
+  .navbar-bizkitpark {background-color:transparent;}
+}

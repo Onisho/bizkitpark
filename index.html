@@ -3,22 +3,42 @@ layout: default
 title: Bizkit Park
 ---
 
+<!-- COVER -->
 <section class="cover">
-<img src="{{site.baseurl}}img/cover.jpg" class="img-fluid" />
+  <div class="container d-none d-sm-none d-md-block text-center">
+    <div class="row">
+      <div class="col">
+        <img src="{{site.baseurl}}/img/logo-top.png" class="img-fluid" />
+      </div>
+    </div>
+  </div>
 </section>
-
+{% include navigation.html %}
 <section>
   <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <p>Every classic track that helped shape this mind-blowing era receives the royal treatment in a swirling and seamless set. Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed, … 
-None are left out of the party.</p>
+    <div class="row text-center">
+      <div class="col">
+        <h1>Earth’s mightiest Nu-Metal tribute band </h1>
+        <h4>We celebrate the entire era and party like it’s 1999!</h4>
       </div>
     </div>
   </div>
 </section>
 
-<section class="content photo my-5 py-5">
+<!-- INTRO -->
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <p class="lead">Every classic track that helped shape this mind-blowing era receives the royal treatment in a swirling and seamless set. Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed, … </p>
+        <p class="lead"><strong>None are left out of the party.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section class="content photo my-5 py-5" id="media">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -41,10 +61,11 @@ None are left out of the party.</p>
   </div>
 </section>
 
+<!-- VIDEO -->
 <section class="content video my-10 py-10">
   <div class="container">
     <div class="row">
-      {% for youtube in site.data.youtube %}
+      {% for youtube in site.data.youtube limit:2 %}
       <div class="col-sm-12 col-md-6">        
         <div class="embed-responsive embed-responsive-16by9">
            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
@@ -61,7 +82,8 @@ None are left out of the party.</p>
   </div>
 </section>
 
-<section class="shows my-10 py-10">
+<!-- SHOWS -->
+<section class="shows my-10 py-10" id="shows">
   <div class="container">
     <div class="row">
       <div class="col text-center">
@@ -81,30 +103,34 @@ None are left out of the party.</p>
   </div>
 </section>
 
-<section class="follow my-10 py-10">
-  <div class="container">
+<!-- FOLLOW US -->
+<section class="follow">
+  <img src="{{site.baseurl}}/img/follow.jpg" class="img-fluid" />
+  <div class="container follow-content">
     <div class="row text-center">
       <div class="col">
-        <h2>Follow Us</h2>
+        <h2 class="">Follow Us</h2>
       </div>
     </div>
     <div class="row text-center">
-      <div class="col">
-        <a href="{{site.facebook}}" title="facebook" rel="external"><i class="fab fa-facebook-square"></i> Facebook</a>
+      <div class="col-6">
+        <a href="{{site.facebook}}" title="facebook" rel="external"><i class="fab fa-facebook-square"></i> <span class="d-none d-sm-inline">Facebook</span></a>
       </div>
-      <div class="col">
-        <a href="{{site.youtube}}" title="youtube" rel="external"><i class="fab fa-youtube"></i> Youtube</a>
+      <div class="col-6">
+        <a href="{{site.youtube}}" title="youtube" rel="external"><i class="fab fa-youtube"></i> <span class="d-none d-sm-inline">Youtube</span></a>
       </div>
     </div>
   </div>
+  <div class="who-image"><img src="{{site.baseurl}}/img/who.png" alt="Bizkit Park" class="img-fluid" /></div>
 </section>
 
-<section class="who my-10 py-10">
+<!-- WHO WE ARE -->
+<section class="who my-10 py-10" id="bio">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
         <h2>Who we are</h2>
-        <p>BIZKIT PARK pays tribute to one of the most illustrious sub genres ever to arise in modern alternative music: NU-METAL</p>
+        <p class="lead">BIZKIT PARK pays tribute to one of the most illustrious sub genres ever to arise in modern alternative music: NU-METAL</p>
         <p>Every classic track that helped shape this mind-blowing era receives the royal treatment in a swirling and seamless set. Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed, … None are left out of the party.</p>
         <p>Despite being underestimated and often bashed by critics, Nu-Metal managed to provide the soundtrack for an entire generation. In addition, it turned out to be the last stronghold of heavy guitars in mainstream music. Gut punching riffs, aggressive drums and lots of attitude broadcasted by radio and TV on a daily basis… It’s a distant memory and hard to imagine these days.</p>
         <p>Therefore one might conclude that it’s about time Nu-Metal received a proper salute. Henceforth Bizkit Park will take this task to heart with staggering enthusiasm and destroy every available stage in the process.</p>
@@ -114,10 +140,11 @@ None are left out of the party.</p>
   </div>
 </section>
 
-<section class="contact my-10 py-10">
-  <img src="{{site.baseurl}}img/logo-bottom.png" alt="bizkit park" class="logo" />
+<!-- CONTACT -->
+<section class="contact my-10 py-10" id="contact">
+  <img src="{{site.baseurl}}img/logo-bottom.png" alt="bizkit park" class="logo-bottom img-fluid" />
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center pb-5 mb-5">
       <div class="col">
         <h3>Promo</h3>
         <p>Bizkit Park<br /><a href="{{site.promo}}" title="promo" class="external">{{site.promo}}</a></p>

@@ -18,22 +18,22 @@ promo: info@bizkitpark.be
 #lANG NAVIGATION
 navi:
 - name: Home
-  url: #
+  url: '#'
   class: 
   rel: 
 - name: Media
-  url: #media
+  url: '#media'
   class: 
   rel: 
 - name: Shows
-  url: #shows
+  url: '#shows'
   class: home
   rel: 
 - name: Bio
-  url: #bio
+  url: '#bio'
   class: 
   rel: 
 - name: Contact
-  url: #contact
+  url: '#contact'
   class: 
   rel: 

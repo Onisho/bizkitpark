@@ -5,19 +5,34 @@ $(document).ready(function() {
 	 window.open($(this).attr('href'));
 	 return false;
   });
+   
+  // chocolat.js gallery
+  $('.chocolat-parent').Chocolat();
   
-  
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 200) {
-        $('.navbar').css('margin-top', '0');
-        $('.scrolldown').css('opacity', '0');
-    }
-    if ($(window).scrollTop() < 200) {
-        $('.scrolldown').css('opacity', '1');
+  // scroll navigation
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
     }
   });
   
-  $('.chocolat-parent').Chocolat();
+  // add class to sticky navigation
+  var header = $(".navbar");
+  
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      header.addClass("is-sticky");
+    } else {
+      header.removeClass("is-sticky");
+    }
+  });
+  
+
   
   
   
