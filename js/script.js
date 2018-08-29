@@ -22,10 +22,9 @@ $(document).ready(function() {
   
   // add class to sticky navigation
   var header = $(".navbar");
-  
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
+    if (scroll >= 150) {
       header.addClass("is-sticky");
     } else {
       header.removeClass("is-sticky");

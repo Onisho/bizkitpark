@@ -1,5 +1,5 @@
 #SITE SETTINGS
-baseurl: 
+baseurl: /bizkitpark
 exclude: ['README.md']
 include: ['_pages']
 permalink: /:title/
@@ -18,7 +18,7 @@ promo: info@bizkitpark.be
 #lANG NAVIGATION
 navi:
 - name: Home
-  url: '#'
+  url: '#top'
   class: 
   rel: 
 - name: Media
