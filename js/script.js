@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  
+
   // open links in external window
   $("a[rel=external]").click(function() {
 	 window.open($(this).attr('href'));
 	 return false;
   });
-   
+
   // chocolat.js gallery
   $('.chocolat-parent').Chocolat();
-  
+
   // scroll navigation
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
@@ -19,10 +19,10 @@ $(document).ready(function() {
       }, 1000);
     }
   });
-  
+
   // add class to sticky navigation
   var header = $(".navbar");
-  $(window).scroll(function() {    
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 150) {
       header.addClass("is-sticky");
@@ -30,10 +30,10 @@ $(document).ready(function() {
       header.removeClass("is-sticky");
     }
   });
-  
 
-  
-  
-  
-  
+
+
+
+
+
 });
