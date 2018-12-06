@@ -69,7 +69,7 @@ title: Bizkit Park
   <div class="container">
     <div class="row">
       {% for youtube in site.data.youtube limit:2 %}
-      <div class="col-sm-12 col-md-6">        
+      <div class="col-sm-12 col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
         </div>
@@ -91,11 +91,11 @@ title: Bizkit Park
     <div class="row">
       <div class="col text-center">
         <h2>Shows</h2>
-        
+
         <!-- Bandsintown -->
         <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="bizkit park" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#FB1038" data-popup-background-color="#000000" data-background-color="#000000" data-display-limit="" data-link-text-color="#FFFFFF"></a>
         <!-- // Bandsintown -->
-      
+
       </div>
     </div>
     <div class="row">
@@ -116,10 +116,13 @@ title: Bizkit Park
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-6">
+      <div class="col-4">
         <a href="{{site.facebook}}" title="facebook" rel="external"><i class="fab fa-facebook-square"></i> <span class="d-none d-sm-inline">Facebook</span></a>
       </div>
-      <div class="col-6">
+      <div class="col-4">
+        <a href="{{site.instagram}}" title="instagram" rel="external"><i class="fab fa-instagram"></i> <span class="d-none d-sm-inline">Instagram</span></a>
+      </div>
+      <div class="col-4">
         <a href="{{site.youtube}}" title="youtube" rel="external"><i class="fab fa-youtube"></i> <span class="d-none d-sm-inline">Youtube</span></a>
       </div>
     </div>
@@ -153,8 +156,9 @@ title: Bizkit Park
         <p>Bizkit Park<br /><a href="{{site.promo}}" title="promo" class="external">{{site.promo}}</a></p>
       </div>
       <div class="col">
-        <h3>Bookings</h3>
-        <p>Bizkit Park<br />L&amp;S Agency<br /><a href="{{site.bookings}}" title="promo" class="external">{{site.bookings}}</a><br />+32 11 67 17 01</p>
+        <h3>Booking info</h3>
+        <p>Belgium<br /><a href="{{site.booking_be_mail}}" title="promo" class="external">{{site.booking_be_mail}}</a><br />{{site.booking_be_phone}}</p>
+        <p>Netherlands<br /><a href="{{site.booking_nl_mail}}" title="promo" class="external">{{site.booking_nl_mail}}</a><br />{{site.booking_nl_phone}}</p>
       </div>
     </div>
   </div>

@@ -13,7 +13,8 @@ h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-tran
 h4 {color:#D8D1C5;text-shadow: 1px 1px #000000;}
 
 /* header */
-.cover {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}
+/*.cover {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
+.cover {background: #000;}
 header {background: #000 url('../img/cover-bottom.jpg') top center no-repeat;background-size: contain;padding-top:50vw;}
 
 /* navigation */
@@ -21,14 +22,15 @@ header {background: #000 url('../img/cover-bottom.jpg') top center no-repeat;bac
 .navbar-dark .navbar-nav .nav-link:hover {color:#FFFFFF;}
 .navbar-bizkitpark {background-color:#000000;}
 .navbar-bizkitpark.is-sticky {background:#000000;}
-.navbar-brand {background: url('../img/logo-top.png') no-repeat;background-size:contain;text-indent:-9999px;width:50vw;}
+/*.navbar-brand {background: #000 url('../img/logo-top.png') no-repeat;background-size:contain;text-indent:-9999px;width:50vw;}*/
+.navbar-brand {background: #000;}
 
 /* buttons */
-.btn-bizkitpark, 
-.btn-bizkitpark:hover, 
+.btn-bizkitpark,
+.btn-bizkitpark:hover,
 .btn-bizkitpark:active,
-.btn-bizkitpark:not(:disabled):not(.disabled).active, 
-.btn-bizkitpark:not(:disabled):not(.disabled):active, 
+.btn-bizkitpark:not(:disabled):not(.disabled).active,
+.btn-bizkitpark:not(:disabled):not(.disabled):active,
 .show>.btn-bizkitpark.dropdown-toggle{
   color: #FFFFFF;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -45,7 +47,7 @@ header {background: #000 url('../img/cover-bottom.jpg') top center no-repeat;bac
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FB1038', endColorstr='#A7122B', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-.btn-bizkitpark.focus, 
+.btn-bizkitpark.focus,
 .btn-bizkitpark:focus {
     box-shadow: none;
 }
@@ -92,12 +94,12 @@ header {background: #000 url('../img/cover-bottom.jpg') top center no-repeat;bac
 .footer .social a {color:#000;font-size:3rem;margin:0 .5rem;}
 
 /* mobile */
-@media screen and (min-width: 768px){ 
+@media screen and (min-width: 768px){
   h2 {margin-bottom:4rem;}
   .follow-content {top:40%;}
   .who-image {bottom:-15vh;}
   .navbar-bizkitpark {background-color:transparent;}
   header {height:75vw;background-size: cover;padding-top:0;}
-  .navbar {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}
+  /*.navbar {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
+  .navbar {background: #000;}
 }
-
