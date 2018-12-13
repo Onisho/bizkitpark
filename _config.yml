@@ -1,10 +1,10 @@
 #SITE SETTINGS
-baseurl: 
+baseurl:
 exclude: ['README.md']
 include: ['_pages']
 permalink: /:title/
 title: Bizkit Park
-description: Earth’s mightiest Nu-Metal tribute band. We celebrate the entire era and party like it’s 1999!
+description: Bizkit Park is earth’s mightiest Nu-Metal tribute band. Bizkit Park celebrates the entire era and party like it’s 1999!
 keywords: bizkit park
 
 #SOCIAL
