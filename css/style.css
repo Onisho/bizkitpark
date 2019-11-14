@@ -62,7 +62,7 @@ header {background: #000 url('../img/cover-bottom.jpg') top center no-repeat;bac
 .follow a {font-size:2.4rem;color:#fff;}
 
 /* who */
-.who {background: transparent url('../img/who.jpg') 50% bottom no-repeat;background-size:cover;min-height:170vh;text-shadow: 1px 1px #000000;}
+.who {background: transparent url('../img/who1.jpg') 50% bottom no-repeat;background-size:cover;min-height:170vh;text-shadow: 1px 1px #000000;}
 .who-image {position:absolute;bottom:-13vh;left:5%;right:5%;text-align:center;}
 
 /* contact */

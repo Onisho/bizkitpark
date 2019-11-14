@@ -1,5 +1,5 @@
 #SITE SETTINGS
-baseurl:
+baseurl: /bizkitpark
 exclude: ['README.md']
 include: ['_pages']
 permalink: /:title/
@@ -15,8 +15,8 @@ bandsintown: https://www.bandsintown.com/en/a/9582945-bizkit-park
 photography: https://www.facebook.com/Sempiternalphotograph/
 booking_be_mail: waldo@lsagency.be
 booking_be_phone: +32 11 67 17 01
-booking_nl_mail: bert@sozconcerts.nl
-booking_nl_phone: +31 (0)38 36 36 103
+booking_nl_mail: roger@tirrmusic.com
+booking_nl_phone: +31 (0)6 420 168 96
 promo: info@bizkitpark.be
 
 #lANG NAVIGATION
