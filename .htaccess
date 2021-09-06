@@ -30,3 +30,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
 <files *.html>
 SetOutputFilter DEFLATE
 </files>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://{HTTP_HOST}%{REQUEST_URI} [L,R=301]
