@@ -12,6 +12,7 @@ h2 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-tran
 h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;}
 h4 {color:#FFFFFF;}
 .red {color:#FB1038;}
+.beige {color:#d5c7af;}
 
 /* header */
 /*.cover {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
@@ -62,10 +63,6 @@ header {background: #000000 url('../img/cover-bottom.jpg') top center no-repeat;
 .follow-content {position:absolute;top:30%;left:0;right:0;text-shadow: 1px 1px #000000;}
 .follow a {font-size:2.4rem;}
 
-/* who */
-.who {background: transparent url('../img/who.jpg') 50% bottom no-repeat;background-size:contain;min-height:160vh;text-shadow: 1px 1px #000000;}
-.who-image {position:absolute;bottom:-13vh;left:5%;right:5%;text-align:center;}
-
 /* contact */
 .contact {position: relative;}
 .contact .logo-bottom {position:absolute;bottom:-160px;left:calc(50vw - 163px);}
@@ -74,6 +71,21 @@ header {background: #000000 url('../img/cover-bottom.jpg') top center no-repeat;
 .py-10 {padding-bottom:5rem !important;padding-top:5rem !important;}
 .my-10 {margin-bottom:5rem !important;margin-top:5rem !important;}
 
+/* gallery */
+.gallery {position: relative;}
+.carousel-control-next, .carousel-control-prev {z-index:9}
+.carousel .carousel-indicators li {  background-color: red; }
+.carousel .carousel-indicators li.active { background-color: green); }
+
+/* gradient */
+.gradient-top {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), #000000);
+    width: 100%;height: 25%;position: absolute;top: 0;left: 0;z-index:1;
+}
+.gradient-bottom {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+    width: 100%;height: 25%;position: absolute;bottom: 0;left: 0;z-index:1;
+}
 
 /* footer */
 .footer {
@@ -98,15 +110,9 @@ header {background: #000000 url('../img/cover-bottom.jpg') top center no-repeat;
 @media screen and (min-width: 768px){
   h2 {margin-bottom:4rem;}
   .follow-content {top:50%;}
-  .who-image {bottom:-15vh;}
-  .who {min-height:130vh;}
   .navbar-bizkitpark {background-color:transparent;}
   header {height:75vw;background-size: cover;padding-top:0;}
   /*.navbar {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
   .navbar {background: #FFFFFF;}
   h1, h4 {color:#000000;}
-}
-
-@media screen and (min-width: 992px){
-  .who {min-height:140vh}
 }

@@ -1,0 +1,23 @@
+<!-- PHOTOS -->
+<section class="content photo my-5 py-5" id="media">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="bricklayer chocolat-parent">
+          {% for image in site.static_files %}
+          {% if image.path contains 'assets/thumbs' %}
+          <div>
+            <a class="chocolat-image" href="{{site.baseurl}}/assets/pictures/{{image.name}}" title="Bizkit Park">
+              <img src="{{site.baseurl}}{{image.path}}" class="img-fluid" />
+            </a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12 py-4 text-center">
+        <p><a href="{{site.facebook}}" class="btn btn-primary btn-bizkitpark" rel="external">view more on <b>Facebook</b></a></p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 #SITE SETTINGS
-baseurl: /bizkitpark
+baseurl: 
 exclude: ['README.md']
 include: ['_pages']
 permalink: /:title/
