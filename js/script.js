@@ -31,6 +31,11 @@ $(document).ready(function() {
     }
   });
 
+  // collapse when clicked
+  $(".navbar-collapse a").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
 
 
   $(".carousel").carousel({
@@ -57,7 +62,7 @@ $(document).ready(function() {
     });
 
 
-    
+
 
 
 

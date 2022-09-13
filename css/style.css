@@ -7,25 +7,28 @@
 body {background: #000;color:#FFF;}
 a {color:#FB1038;cursor:pointer;}
 a:hover {text-decoration:none;color:#fff;}
-h1 {color: #FFFFFF;}
+h1 {color: #000000;font-family: 'Open Sans', sans-serif;font-weight:700;letter-spacing:-2px;font-size:2.6em;}
 h2 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;margin-bottom:1rem;text-shadow: 2px 2px #000000;}
 h3 {font-family: 'Open Sans', sans-serif;font-weight:800;color:#D6C6B0;text-transform: uppercase;font-size:2.6em;}
-h4 {color:#FFFFFF;}
+h4 {color:#000000;}
 .red {color:#FB1038;}
 .beige {color:#d5c7af;}
 
 /* header */
 /*.cover {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
-.cover {background: #FFFFFF;}
-header {background: #000000 url('../img/cover-bottom.jpg') top center no-repeat;background-size: contain;padding-top:50vw;}
+.cover {background:;}
+header {height:100vh;background: #000000 url('../img/site-header.jpg') bottom center no-repeat;background-size: cover;padding-top:10vh;}
 
 /* navigation */
 .navbar-light .navbar-nav .nav-link {text-transform: uppercase;color:#FB1038;}
 .navbar-light .navbar-nav .nav-link:hover {color:#000000;}
-.navbar-bizkitpark {background-color:#FFFFFF;}
-.navbar-bizkitpark.is-sticky {background:#d5c7af;}
+.navbar-bizkitpark {background-color:#000000;}
+.navbar-bizkitpark.is-sticky {background:#000000;}
 /*.navbar-brand {background: #000 url('../img/logo-top.png') no-repeat;background-size:contain;text-indent:-9999px;width:50vw;}*/
-.navbar-brand {background: transparent;}
+.navbar-brand {background:#000;}
+.navbar {background: #000;}
+.navbar-dark .navbar-nav .nav-link {color: #FB1038;}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {color:#D6C6B0;}
 
 /* buttons */
 .btn-bizkitpark,
@@ -106,13 +109,14 @@ header {background: #000000 url('../img/cover-bottom.jpg') top center no-repeat;
 .footer .nav a {color:#000;text-transform:uppercase;font-size:.85rem;}
 .footer .social a {color:#000;font-size:3rem;margin:0 .5rem;}
 
-/* mobile */
+/* not mobile */
 @media screen and (min-width: 768px){
   h2 {margin-bottom:4rem;}
   .follow-content {top:50%;}
-  .navbar-bizkitpark {background-color:transparent;}
-  header {height:75vw;background-size: cover;padding-top:0;}
+  header {height:100vh;background-size: cover;padding-top:10vh;}
   /*.navbar {background: #000 url('../img/cover-top.jpg') bottom center no-repeat;background-size:cover;}*/
-  .navbar {background: #FFFFFF;}
-  h1, h4 {color:#000000;}
+  h1 {font-size:3rem;}
+}
+@media screen and (max-width:767px) {
+  .navbar-collapse {height:100vh;  transition: all 0s;}
 }

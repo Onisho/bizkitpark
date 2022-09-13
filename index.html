@@ -4,17 +4,19 @@ title: Bizkit Park
 ---
 
 <!-- COVER -->
-<section class="cover" id="top">
-  <div class="container d-none d-sm-none d-md-block text-center">
-    <div class="row">
-      <div class="col">
-        <img src="{{site.baseurl}}/img/logo-top.png" class="img-fluid" />
+
+  {% include navigation.html %}
+
+<header class="mb-5 mb-md-0">
+  <section class="cover">
+    <div class="container  text-center">
+      <div class="row">
+        <div class="col">
+          <img src="{{site.baseurl}}/img/logo-top.png" class="img-fluid" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
-{% include navigation.html %}
-<header class="mb-5 mb-md-0">
+  </section>
   <section>
     <div class="container">
       <div class="row text-center">
@@ -41,7 +43,7 @@ title: Bizkit Park
     <div class="gradient-bottom"></div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="{{site.baseurl}}/gallery/bizkitpark-12.jpg" alt="Bizkit Park">
+        <img class="d-block w-100" src="{{site.baseurl}}/img/gallery-default.jpg" alt="Bizkit Park">
       </div>
       {% for image in site.static_files %}
       {% if image.path contains 'gallery' %}
@@ -92,7 +94,6 @@ title: Bizkit Park
     <div class="row">
       <div class="col text-center">
         <h2>Shows</h2>
-        <p><img src="{{baseurl}}/img/affiche.jpg" alt="affiche" class="img-fluid"></p>
 
         <!-- Bandsintown -->
         <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="bizkit park" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#FB1038" data-popup-background-color="#000000" data-background-color="#000000" data-display-limit="" data-link-text-color="#FFFFFF"></a>
@@ -135,7 +136,7 @@ title: Bizkit Park
 
 <!-- WHO WE ARE -->
 <section class="who my-2 my-lg-5 py-5" id="bio">
-  <div class="container-fluid">
+  <div class="container-fluid d-none">
     <div class="row text-center">
       <div class="col-12">
         <p><img src="{{site.baseurl}}/img/who.png" alt="Bizkit Park" class="img-fluid" /></p>
@@ -145,7 +146,7 @@ title: Bizkit Park
   <div class="container">
     <div class="row text-center">
       <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
-        <h2>Who we are</h2>
+        <h2>Bio</h2>
         <p class="lead"><strong>Bizkit Park</strong> pays tribute to one of the most illustrious subgenres in modern alternative music: <strong>NU-METAL</strong>.</p>
         <p>Every classic track from this golden era receives the royal treatment in a swirling and seamless set. <i>Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, Disturbed,</i> .. None are left out of the party.</p>
         <p>Nu-Metal provided the soundtrack to an entire generation. In addition, it turned out to be the last stronghold of heavy guitars in mainstream music. Gut punching riffs, aggressive drums and boatloads of attitude broadcasted daily on your radio and TV. A distant memory these days.</p>
